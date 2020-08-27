@@ -1,0 +1,15 @@
+{% extends "layout/layout.twig" %}
+
+{% block css %}
+    {% webpack_entry_css 'home/home-index' %}
+{% endblock %}
+
+{% block js %}
+    {% webpack_entry_js 'home/home-index' %}
+{% endblock %}
+
+{% block content %}
+
+Welcome Senpai
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout/layout.twig" %}
+
+{% block css %}
+    {% webpack_entry_css 'dashboard/dashboard' %}
+{% endblock %}
+
+{% block js %}
+    {% webpack_entry_js 'dashboard/dashboard' %}
+{% endblock %}
+
+{% block content %}
+
+Welcome {{name}}
+
+{% endblock %}
