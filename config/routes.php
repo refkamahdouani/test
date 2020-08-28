@@ -17,5 +17,8 @@ return function (App $app) {
 
     $app->get('/update', \App\Action\UpdateAction::class);
     $app->get('/delete', \App\Action\DeleteAction::class);
+    $app->get('/register', \App\Action\RegisterAction::class);
+    $app->post('/register', \App\Action\RegisterPostAction::class);
+
 
 };

@@ -9,7 +9,9 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 module.exports = {
     entry: {
         'home/home-index': './templates/home/home-index.js',
-        'dashboard/dashboard': './templates/dashboard/dashboard.js'
+        'dashboard/dashboard': './templates/dashboard/dashboard.js',
+        'register/register': './templates/register/register.js',
+        'layout/layout': './templates/layout/layout.js',
 
         // here you can add more entries for each page or global assets like jQuery and bootstrap
         // 'layout/layout': './templates/layout/layout.js'
