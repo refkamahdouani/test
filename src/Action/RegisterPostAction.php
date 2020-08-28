@@ -42,15 +42,24 @@ final class RegisterPostAction
 
          ];
         $user = $this->userUpdate->newinsert($values);
-if ($user) {
+if ($firstname =='') {
     $result = [
-        'success' => 1,
-        'id' => $user
+        'success' => 0,
+        
     ];
 }else {
+    $user = $this->userUpdate->newinsert($values);
+    if ($user){
+    $result = [
+        'success' => 1,
+        'id' =>$user
+    ];
+}else{
     $result = [
         'success' => 0
     ];
+
+}
 }
 
 

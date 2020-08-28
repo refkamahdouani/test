@@ -22,7 +22,17 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+.cancel {
+  background-color: #ca2f51;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.signup{
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;

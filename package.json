@@ -14,9 +14,10 @@
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
     "node-sass": "^4.5.3",
+    "popper.js": "^1.16.1",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
-    "sweetalert2": "^9.15.2"
+    "sweetalert2": "^9.17.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
@@ -30,6 +31,4 @@
     "webpack-cli": "^3.3.9",
     "webpack-manifest-plugin": "^2.0.4"
   }
-
-  
 }

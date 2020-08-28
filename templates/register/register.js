@@ -1,3 +1,5 @@
+const { default: Swal } = require('sweetalert2');
+
 require('./register.css');
 
 $(document).ready(function(params) {
@@ -6,6 +8,8 @@ var firstname = $("#firstname").val();
 var lasttname = $("#lastname").val();
 var email = $("#email").val();
 var password =$("#password").val();
+console.log('send');
+
 
 var form = new FormData();
 form.append("firstname", firstname);
@@ -25,6 +29,29 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
+  var res = JSON.parse(response);
+  console.log(typeof(res));
+  if(res.success == 1) {
+      $("input").val('');
+
+
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Your work has been saved',
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }else {
+        Swal.fire(
+            'something went wrong', 
+            'please check inputs',
+            'error'
+        );
+       
+    }
+      
+  
 });
 });
 })
